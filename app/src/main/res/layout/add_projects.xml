@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/viewAddProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Projects"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/EdtAddProjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Project Name"
+        android:layout_below="@+id/viewAddProjects"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/EdtAddProjects"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/proj_btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="@drawable/btn_circle"
+            android:backgroundTint="@color/red"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:id="@+id/proj_btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:background="@drawable/btn_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
